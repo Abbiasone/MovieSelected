@@ -1,0 +1,15 @@
+const getMovies = () => {
+  const promise = new Promise((resolve, reject) => {
+    fetch(`http://www.omdbapi.com/?s=spider-man&apikey=cad57c10`)
+      .then((dataJSON) => {
+        const data = dataJSON.json();
+        resolve(data);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
+  return promise;
+};
+
+export default getMovies;

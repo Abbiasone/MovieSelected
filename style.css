@@ -1,0 +1,30 @@
+body{
+    background-color: #000;
+}
+
+
+.container {
+    background-color: #000;
+    color: #00f;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+.logo{
+    border-radius: 50%;
+}
+
+
+
+.rowContainer {
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  .rowContainer img {
+    width: 200px;
+    height: 200px; 
+    margin: 5px;
+  }
+
+  
