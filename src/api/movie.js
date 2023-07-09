@@ -1,6 +1,6 @@
 const getMovies = () => {
   const promise = new Promise((resolve, reject) => {
-    fetch(`http://www.omdbapi.com/?s=spider-man&apikey=cad57c10`)
+    fetch(`https://www.omdbapi.com/?s=spider-man&apikey=cad57c10`)
       .then((dataJSON) => {
         const data = dataJSON.json();
         resolve(data);
